@@ -24,3 +24,5 @@ Duyarlı (responsive) tasarım ile cihazlarda sorunsuz kullanım.
 Bu proje, portfolyo yönetimini hızlandırmak ve kolaylaştırmak için tasarlanmıştır. 🚀
 
 ------
+
+![Ekran görüntüsü 2025-02-02 012944](https://github.com/user-attachments/assets/f1639aec-220b-4f00-923d-031230926905)
