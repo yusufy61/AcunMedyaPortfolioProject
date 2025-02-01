@@ -1,0 +1,25 @@
+﻿@model AcunMedyaPortfolioProject.Models.About
+@{
+    ViewBag.Title = "CreateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Create About</h2>
+
+<div class="container">
+    <form method="post">
+        <label>Başlık</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control"})
+        <br />
+        <label>Açıklama</label>
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control"})
+        <br />
+        <label>Resim Adresi</label>
+        @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control"})
+        <br />
+        <label>CV Link</label>
+        @Html.TextBoxFor(x => x.CVLink, new { @class = "form-control"})
+        <br />
+        <button class="btn btn-info">About Kaydet</button>
+    </form>
+</div>

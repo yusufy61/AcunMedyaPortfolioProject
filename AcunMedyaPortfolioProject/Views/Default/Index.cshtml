@@ -1,0 +1,112 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html class="no-js ss-preload" lang="en">
+
+@Html.Action("PartialHead");
+
+<body id="top">
+
+
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+        <div class="circles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- ## site header
+        ================================================== -->
+        @Html.Action("PartialSiteHeader");
+        <!-- ## main content
+        ==================================================- -->
+    <main class="s-content">
+
+
+        <!-- ### intro
+    ================================================== -->
+        @Html.Action("PartialIntro");
+        <!-- ### about
+    ================================================== -->
+
+        <section id="about" class="s-about target-section">
+
+
+            @Html.Action("PartialAbout");<!-- about-info -->
+
+
+            <div class="row about-expertise" data-animate-block>
+                <div class="column lg-12">
+
+                    <h2 class="text-pretitle" data-animate-el>Uzmanlık Alanları</h2>
+
+                    <ul class="skills-list h1" data-animate-el>
+                        <li>C# Algorithm</li>
+                        <li>ASP.NET Core Web Application</li>
+                        <li>Python Cyber Security</li>
+                        <li>File Encrypt & Decrypt</li>
+                        <li>Python Game & Pygame</li>
+                        <li>Wifi Control with ESP32</li>
+                    </ul>
+
+                </div>
+            </div> <!-- end about-expertise -->
+
+
+            
+
+        </section> <!-- end s-about -->
+
+        <section id="experience" class="s-about target-section">
+            <div class="row about-timelines" data-animate-block>
+
+                @Html.Action("PartialExperience"); <!-- end column -->
+
+                @Html.Action("PartialEducation"); <!-- end column -->
+
+
+            </div> <!-- end about-timelines -->
+        </section>
+        <!-- ### works
+    ================================================== -->
+        <section id="works" class="s-works target-section">
+
+
+            @Html.Action("PartialProject"); <!-- end works-portfolio -->
+
+
+            @Html.Action("PartialTestimonial"); <!-- end row testimonials -->
+
+        </section> <!-- end s-works -->
+        <!-- ### contact
+    ================================================== -->
+        @Html.Action("PartialContact");<!-- end contact -->
+
+    </main> <!-- end s-content -->
+        <!-- ## footer
+        ================================================== -->
+        @Html.Action("PartialFooter");<!-- end s-footer -->
+
+    </div> <!-- end -s-pagewrap -->
+    <!-- Java Script
+    ================================================== -->
+@Html.Action("PartialScripts");
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿@model AcunMedyaPortfolioProject.Models.SocialMedia
+@{
+    ViewBag.Title = "UpdateSocialMedia";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Sosyal Medya Güncelle</h2>
+
+<div class="container">
+    <form method="post">
+
+        <label>Platform Adı</label>
+        @Html.TextBoxFor(x => x.platform_Name, new { @class = "form-control" })
+        <br />
+
+        <label>URL</label>
+        @Html.TextBoxFor(x => x.platform_URL, new { @class = "form-control" })
+        <br />
+
+        <label>Username</label>
+        @Html.TextBoxFor(x => x.platform_username, new { @class = "form-control" })
+        <br />
+
+        <label>Image Url</label>
+        @Html.TextBoxFor(x => x.image_url, new { @class = "form-control" })
+        <br />
+
+        <button class="btn btn-info">Kaydet</button>
+    </form>
+</div>

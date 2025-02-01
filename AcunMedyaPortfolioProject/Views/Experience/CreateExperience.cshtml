@@ -1,0 +1,28 @@
+﻿@model AcunMedyaPortfolioProject.Models.Experience
+@{
+    ViewBag.Title = "CreateExperience";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Deneyim Ekle</h2>
+
+<div class="container">
+    <form method="post">
+        <label>Başlık</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+        <br />
+        <label>Kurum Adı</label>
+        @Html.TextBoxFor(x => x.CompanyName, new { @class = "form-control" })
+        <br />
+        <label>Başlangıç Zamanı</label>
+        @Html.TextBoxFor(x => x.StartDate, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+        <br />
+        <label>Bitiş Zamanı</label>
+        @Html.TextBoxFor(x => x.EndDate, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+        <br />
+        <label>Açıklama</label>
+        @Html.TextBoxFor(x => x.Description, new {@class = "form-control" })
+        <br />
+        <button class="btn btn-info">Kaydet</button>
+    </form>
+</div>

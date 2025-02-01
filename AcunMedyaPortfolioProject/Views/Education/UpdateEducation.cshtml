@@ -1,0 +1,28 @@
+﻿@model AcunMedyaPortfolioProject.Models.Education
+@{
+    ViewBag.Title = "UpdateEducation";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Eğitim Güncelle</h2>
+
+<div class="container">
+    <form method="post">
+        <label>Başlık</label>
+        @Html.TextBoxFor(x => x.title, new { @class = "form-control" })
+        <br />
+        <label>Kurum Adı</label>
+        @Html.TextBoxFor(x => x.institutionName, new { @class = "form-control" })
+        <br />
+        <label>Başlangıç Zamanı</label>
+        @Html.TextBoxFor(x => x.startdate, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+        <br />
+        <label>Bitiş Zamanı</label>
+        @Html.TextBoxFor(x => x.enddate, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+        <br />
+        <label>Açıklama</label>
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-info">Güncelle</button>
+    </form>
+</div>
